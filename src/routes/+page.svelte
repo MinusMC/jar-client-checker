@@ -48,17 +48,17 @@
           state = "green";
           
           if (data.includes("FML")) {
-            message = `The file "${file.name} is a Forge mod client"`
+            message = `The file "${file.name}" is a Forge mod client`
           } else if (data.includes("Fabric")) {
-            message = `The file "${file.name} is a Fabric mod client"`
+            message = `The file "${file.name}" is a Fabric mod client"`
           } else {
-            message = `The file "${file.name} is a MCP Version Client or an unknown jar."`
+            message = `The file "${file.name}" is a MCP Version Client or an unknown jar.`
           }
 
           console.log(data);
         }, (e) => {
           state = "green";
-          message = `The file "${file.name} is a MCP Version Client or an unknown jar."`
+          message = `The file "${file.name}" is a MCP Version Client or an unknown jar.`
         })
 
 
