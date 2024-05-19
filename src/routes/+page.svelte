@@ -3,6 +3,7 @@
   import { CloudArrowUpOutline, InfoCircleSolid } from "flowbite-svelte-icons";
 
   import JSZip from "jszip";
+  import { base } from '$app/paths'
 
   let file = null;
   let state = "green";
@@ -74,7 +75,7 @@
 
   <header class="mb-4 px-6 w-full mx-auto top-0 z-40">
     <Navbar color="none" fluid>
-      <NavBrand href="/">
+      <NavBrand href="{base}/">
         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Jar Client Checker</span>
       </NavBrand>
       <DarkMode />
@@ -104,7 +105,7 @@
 </div>
 
 <Footer>
-  <FooterCopyright href="/" by="MinusMC™" year={2024} />
+  <FooterCopyright href="{base}/" by="MinusMC™" year={2024} />
 </Footer>
 
 </div>
