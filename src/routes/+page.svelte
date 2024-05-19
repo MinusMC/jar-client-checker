@@ -37,7 +37,7 @@
 
     console.log(file);
 
-    if (file.type !== "application/java-archive" && file.type !== "application/x-java-archive" && file.type !== "application/x-jar") {
+    if (!file.name.includes(".jar")) {
       state = "red"
       message = `The file "${file.name}" is not a jar.`
       return;
