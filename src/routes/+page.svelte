@@ -33,9 +33,6 @@
   };
 
   const checkFile = () => {
-    // check extensions
-
-    console.log(file);
 
     if (!file.name.includes(".jar")) {
       state = "red"
